@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>WNC Todos</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />-
+    <!---<link rel="stylesheet" type="text/css" media="screen" href="main.css" /> --> 
 </head>
 <body>
     <h1>Todos List</h1>
@@ -13,9 +13,21 @@
     </div>
 
     <div>
-        <button onclick="">Add</button>
+        <button onclick="handlers.addTodo()">Add</button>
         <input id="addTodoTextInput" type="text" placeholder="Enter your todo"> 
     </div>
+
+    <div>
+        <button onclick="handlers.changeTodo()">Change Todo</button>
+        <input id="changeTodoPositionInput" type="number" placeholder="0, 1, 2">
+        <input id="changeTodoTextInput" type="text">
+    </div>
+
+    <div>
+        <button onclick="handlers.deleteTodo()">Delete</button>
+        <input id="deleteTodoPositionInput" type="number" placeholder="0, 1, 2"> 
+    </div>
+
 
     <script src="todoswatchandcode.js"></script>
 </body>
