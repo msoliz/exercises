@@ -53,6 +53,10 @@ function init(){
     
 }
 
+resetButton.addEventListener("click", function(){
+    reset();
+});
+
 function reset(){
     //generate all new colors
     colors = generateRandomColors(numSquares);
@@ -75,12 +79,6 @@ function reset(){
     }
     h1.style.backgroundColor = "steelblue";
 }
-
-
-resetButton.addEventListener("click", function(){
-    reset();
-});
-
 
 function changeColors(colors){
     //loop through all squares
